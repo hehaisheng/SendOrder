@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/sender_judge_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="总分 8.5"
+        android:padding="8dp"
+        android:textColor="@color/itemBackground"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        />
+
+
+    <Button
+        android:id="@+id/sender_judge_middle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sender_judge_mark"
+        android:text="中等"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/redcircle"
+        android:textColor="@color/text_common"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/sender_judge_middle_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sender_judge_middle"
+        android:text="10%"
+        android:textColor="@color/text_common"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/sender_judge_two_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/sender_judge_middle_text"
+        android:layout_alignLeft="@+id/sender_judge_two"
+        android:text="10%"
+        android:textColor="@color/text_common"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/sender_judge_one_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/sender_judge_middle_text"
+        android:layout_alignLeft="@+id/sender_judge_one"
+        android:text="20%"
+        android:textColor="@color/text_common"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/sender_judge_four_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/sender_judge_middle_text"
+        android:layout_alignLeft="@+id/sender_judge_four"
+        android:text="30%"
+        android:textColor="@color/text_common"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/sender_judge_five_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/sender_judge_middle_text"
+        android:layout_alignLeft="@+id/sender_judge_five"
+        android:text="40%"
+        android:textColor="@color/text_common"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/sender_judge_two"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="慢"
+        android:layout_toLeftOf="@+id/sender_judge_middle"
+        android:layout_alignTop="@+id/sender_judge_middle"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/redcircle"
+        android:textColor="@color/text_common"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/sender_judge_one"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/sender_judge_two"
+        android:layout_alignTop="@+id/sender_judge_middle"
+        android:layout_marginRight="30dp"
+        android:text="不好"
+        android:background="@drawable/redcircle"
+        android:textColor="@color/text_common"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/sender_judge_four"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="还好"
+        android:layout_toRightOf="@+id/sender_judge_middle"
+        android:layout_alignTop="@+id/sender_judge_middle"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/redcircle"
+        android:textColor="@color/text_common"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/sender_judge_five"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="快"
+        android:layout_toRightOf="@+id/sender_judge_four"
+        android:layout_alignTop="@+id/sender_judge_middle"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/redcircle"
+        android:textColor="@color/text_common"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+
+
+    <TextView
+        android:id="@+id/sender_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorLineItem"
+        android:layout_below="@+id/sender_judge_five_text"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/sender_today_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sender_cut_line"
+        android:scaleType="fitXY"
+        android:src="@drawable/friend_normal"/>
+    <TextView
+        android:id="@+id/sender_today_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/sender_today_image"
+        android:layout_alignTop="@id/sender_today_image"
+        android:text="今日总接单数:"
+        android:textColor="@color/text_common"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/sender_today_count_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/sender_today_text"
+        android:layout_toRightOf="@+id/sender_today_text"
+        android:text="100单"
+        android:padding="5dp"
+        android:textColor="@color/itemBackground"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/sender_cut_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLineItem"
+        android:layout_below="@+id/sender_today_count_text"
+        />
+
+
+    <ImageView
+        android:id="@+id/sender_mouth_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sender_cut_line1"
+        android:scaleType="fitXY"
+        android:src="@drawable/friend_normal"/>
+    <TextView
+        android:id="@+id/sender_mouth_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/sender_mouth_image"
+        android:layout_alignTop="@id/sender_mouth_image"
+        android:text="本月总接单数:"
+        android:textColor="@color/text_common"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/sender_mouth_count_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/sender_mouth_text"
+        android:layout_toRightOf="@+id/sender_mouth_text"
+        android:text="400单"
+        android:padding="5dp"
+        android:textColor="@color/itemBackground"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/sender_cut_line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLineItem"
+        android:layout_below="@+id/sender_mouth_count_text"
+        />
+
+    <ImageView
+        android:id="@+id/sender_detail_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sender_cut_line2"
+        android:scaleType="fitXY"
+        android:src="@drawable/friend_normal"/>
+    <TextView
+        android:id="@+id/sender_detail_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/sender_detail_image"
+        android:layout_alignTop="@id/sender_detail_image"
+        android:text="接单详细信息"
+        android:textColor="@color/text_common"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/sender_cut_line3"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorLineItem"
+        android:layout_below="@+id/sender_detail_text" />
+
+
+    <ImageView
+        android:id="@+id/sender_quit_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sender_cut_line3"
+        android:scaleType="fitXY"
+        android:src="@drawable/friend_normal"/>
+    <TextView
+        android:id="@+id/sender_quit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/sender_quit_image"
+        android:layout_alignTop="@id/sender_quit_image"
+        android:text="退出登录"
+        android:textColor="@color/text_common"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/sender_cut_line4"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLineItem"
+        android:layout_below="@+id/sender_quit_text" />
+
+    <ImageView
+        android:id="@+id/sender_ever_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sender_cut_line4"
+        android:scaleType="fitXY"
+        android:src="@drawable/friend_normal"/>
+    <TextView
+        android:id="@+id/sender_ever_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/sender_ever_image"
+        android:layout_alignTop="@id/sender_ever_image"
+        android:text="解除派送员职务"
+        android:textColor="@color/text_common"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/sender_cut_line5"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorLineItem"
+        android:layout_below="@+id/sender_ever_text" />
+
+</RelativeLayout>
